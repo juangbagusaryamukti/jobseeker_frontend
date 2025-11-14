@@ -17,7 +17,7 @@ class _SignupViewState extends State<SignupView> {
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
 
-  bool _isLoading = false;
+  final bool _isLoading = false;
   bool _obscurePassword = true;
   bool _isEmailValid = true;
   String? _emailErrorText;

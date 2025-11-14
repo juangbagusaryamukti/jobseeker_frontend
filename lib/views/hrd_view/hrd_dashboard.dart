@@ -22,7 +22,7 @@ class _HrdDashboardState extends State<HrdDashboard> {
   final VacancyController _vacancyController = VacancyController();
   final HrdController _controller = HrdController();
 
-  TextEditingController _searchcontroller = TextEditingController();
+  final TextEditingController _searchcontroller = TextEditingController();
 
   bool _isLoading = true;
   bool _isLoadingVacancies = true;

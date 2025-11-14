@@ -381,15 +381,15 @@ class _SocietyApplyState extends State<SocietyApply> {
   Widget _buildPdfCard({File? localFile, String? remoteUrl}) {
     final isLocal = localFile != null;
     final fileName =
-        isLocal ? localFile!.path.split('/').last : remoteUrl!.split('/').last;
+        isLocal ? localFile.path.split('/').last : remoteUrl!.split('/').last;
     final fileSize = isLocal
-        ? "${(localFile!.lengthSync() / (1024 * 1024)).toStringAsFixed(2)} Mb"
+        ? "${(localFile.lengthSync() / (1024 * 1024)).toStringAsFixed(2)} Mb"
         : "Server File";
 
     return GestureDetector(
       onTap: () async {
         if (isLocal) {
-          await OpenFilex.open(localFile!.path);
+          await OpenFilex.open(localFile.path);
         } else {
           // kalau file dari server
           ScaffoldMessenger.of(context).showSnackBar(

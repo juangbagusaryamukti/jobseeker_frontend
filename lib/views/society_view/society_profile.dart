@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:jobseeker_app/controllers/auth_controller.dart';
 import 'package:jobseeker_app/controllers/portofolio_controller.dart';
-import 'package:jobseeker_app/controllers/skill_controller.dart';
 import 'package:jobseeker_app/controllers/society_controller.dart';
 import 'package:jobseeker_app/models/society_model.dart';
 import 'package:jobseeker_app/utils/file_util.dart';
@@ -13,7 +12,6 @@ import 'package:jobseeker_app/widgets/colors.dart';
 import 'package:jobseeker_app/widgets/customtextfield.dart';
 import 'package:jobseeker_app/widgets/society_bottom_nav.dart';
 import 'package:jobseeker_app/widgets/upload_cv_bottomsheet.dart';
-import 'package:open_filex/open_filex.dart';
 
 class SocietyProfile extends StatefulWidget {
   const SocietyProfile({super.key});

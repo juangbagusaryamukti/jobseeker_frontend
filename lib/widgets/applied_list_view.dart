@@ -99,7 +99,7 @@ class AppliedListView extends StatelessWidget {
   }
 
   _buildButton() {
-    return Container(
+    return SizedBox(
       width: double.infinity,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,

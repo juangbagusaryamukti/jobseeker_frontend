@@ -43,9 +43,7 @@ class _UpdateSocietyProfileViewState extends State<UpdateSocietyProfileView> {
         _nameController.text = result.name ?? '';
         _addressController.text = result.address ?? '';
         _phoneController.text = result.phone ?? '';
-        _dobController.text = result.dateOfBirth != null
-            ? result.dateOfBirth!.split('T').first
-            : '';
+        _dobController.text = result.dateOfBirth!.split('T').first;
         _genderController.text = result.gender ?? '';
       });
     } else {
@@ -180,7 +178,7 @@ class _UpdateSocietyProfileViewState extends State<UpdateSocietyProfileView> {
                       CustomTextField(
                         controller: _dobController,
                         label: "Date of Birth (YYYY-MM-DD)",
-                        hintText: _profile?.dateOfBirth?.split('T').first ??
+                        hintText: _profile?.dateOfBirth.split('T').first ??
                             "2000-01-01",
                         enabled: !_isLoading,
                         validator: (v) =>

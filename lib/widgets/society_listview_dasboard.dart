@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
 import 'package:jobseeker_app/controllers/vacancy_controller.dart';
 import 'package:jobseeker_app/models/vacancy_model.dart';
 import 'package:jobseeker_app/views/society_view/society_vacancy_details.dart';

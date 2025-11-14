@@ -25,7 +25,7 @@ class AuthController {
         const SnackBar(
           content: Text('Logout berhasil'),
           backgroundColor: Colors.green,
-          duration: const Duration(seconds: 3),
+          duration: Duration(seconds: 3),
         ),
       );
       await prefs.remove('token');
@@ -39,7 +39,7 @@ class AuthController {
         const SnackBar(
           content: Text('Logout gagal. Coba lagi.'),
           backgroundColor: Colors.red,
-          duration: const Duration(seconds: 3),
+          duration: Duration(seconds: 3),
         ),
       );
     }

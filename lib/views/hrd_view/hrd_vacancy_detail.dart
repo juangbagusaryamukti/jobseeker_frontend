@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:jobseeker_app/controllers/hrd_controller.dart';
 import 'package:jobseeker_app/models/hrd_model.dart';
 import 'package:jobseeker_app/models/vacancy_model.dart';
 import 'package:jobseeker_app/widgets/colors.dart';

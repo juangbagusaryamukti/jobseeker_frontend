@@ -56,7 +56,7 @@ class PortfolioController with ChangeNotifier {
 
       if (portfolios.isNotEmpty) {
         await _societyController.updatePortfolio(
-          id: portfolios.first.id!,
+          id: portfolios.first.id,
           description: newDescription.trim(),
         );
       } else {
@@ -96,7 +96,7 @@ class PortfolioController with ChangeNotifier {
 
       if (portfolios.isNotEmpty) {
         await _societyController.updatePortfolio(
-          id: portfolios.first.id!,
+          id: portfolios.first.id,
           skills: newSkills,
         );
       } else {
@@ -140,7 +140,7 @@ class PortfolioController with ChangeNotifier {
       if (portfolios.isNotEmpty) {
         // Update CV (replace file lama)
         await _societyController.updatePortfolio(
-          id: portfolios.first.id!,
+          id: portfolios.first.id,
           newFilePath: filePath,
         );
       } else {
@@ -175,7 +175,7 @@ class PortfolioController with ChangeNotifier {
     try {
       final portfolios = await _societyController.getAllPortfolios();
 
-      if (portfolios.isEmpty || portfolios.first.file == null) {
+      if (portfolios.isEmpty) {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(content: Text("No CV to delete")),
         );
@@ -184,7 +184,7 @@ class PortfolioController with ChangeNotifier {
 
       // Panggil backend untuk hapus file CV
       await _societyController.updatePortfolio(
-        id: portfolios.first.id!,
+        id: portfolios.first.id,
         newFilePath: null,
       );
 

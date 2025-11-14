@@ -368,7 +368,7 @@ class _CompleteSocietyProfilePageState
                             child: IgnorePointer(
                               ignoring: _isLoading, // tidak bisa ditekan
                               child: DropdownButtonFormField<String>(
-                                value: _selectedGender,
+                                initialValue: _selectedGender,
                                 items: const [
                                   DropdownMenuItem(
                                       value: 'Male', child: Text('Male')),

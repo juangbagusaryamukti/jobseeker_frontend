@@ -94,10 +94,10 @@ class VacancyController {
   }
 
   // === APPLY TO POSITION (Society) ===
-  Future<bool> applyToPosition(String positionId, String cover_letter) async {
+  Future<bool> applyToPosition(String positionId, String coverLetter) async {
     errorMessage = null;
     try {
-      await _service.applyToPosition(positionId, cover_letter);
+      await _service.applyToPosition(positionId, coverLetter);
       return true;
     } catch (e) {
       errorMessage = e.toString();

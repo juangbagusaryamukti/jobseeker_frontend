@@ -3,7 +3,6 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:jobseeker_app/services/hrd_services.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:jobseeker_app/models/hrd_model.dart';
 import 'package:jobseeker_app/widgets/colors.dart';
 import '../../widgets/customtextfield.dart';

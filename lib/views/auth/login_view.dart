@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:jobseeker_app/widgets/colors.dart';
 import 'package:jobseeker_app/widgets/customtextfield.dart';
 import '../../services/auth_service.dart';

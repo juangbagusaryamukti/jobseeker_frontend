@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:jobseeker_app/widgets/colors.dart';
 
 class SocietyBottomNav extends StatefulWidget {
-  SocietyBottomNav(this.page);
+  SocietyBottomNav(this.page, {super.key});
   int page;
 
   @override

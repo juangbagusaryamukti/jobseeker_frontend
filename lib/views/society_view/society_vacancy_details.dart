@@ -79,14 +79,14 @@ class _SocietyVacancyDetailsState extends State<SocietyVacancyDetails> {
                       decoration: BoxDecoration(
                         color: ColorsApp.Grey2,
                         borderRadius: BorderRadius.circular(10),
-                        image: companylogo != null && companylogo!.isNotEmpty
+                        image: companylogo != null && companylogo.isNotEmpty
                             ? DecorationImage(
-                                image: NetworkImage(companylogo!),
+                                image: NetworkImage(companylogo),
                                 fit: BoxFit.cover,
                               )
                             : null,
                       ),
-                      child: companylogo == null || companylogo!.isEmpty
+                      child: companylogo == null || companylogo.isEmpty
                           ? const Icon(Icons.apartment, color: Colors.grey)
                           : null,
                     ),
@@ -221,7 +221,7 @@ class _SocietyVacancyDetailsState extends State<SocietyVacancyDetails> {
               context,
               MaterialPageRoute(
                 builder: (context) => SocietyApply(
-                  
+
                   vacancy: vacancy,
                 ),
               ),

@@ -23,7 +23,7 @@ class _HrdProfileState extends State<HrdProfile> {
 
   HrdModel? _profile;
   List<VacancyModel> _vacancies = [];
-  List<dynamic> _applicants = [];
+  final List<dynamic> _applicants = [];
 
   File? _pickedImage;
   String? logoUrl;

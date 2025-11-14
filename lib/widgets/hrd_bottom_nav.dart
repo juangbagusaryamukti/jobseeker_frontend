@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:jobseeker_app/widgets/colors.dart';
 
 class HrdBottomNav extends StatefulWidget {
-  HrdBottomNav(this.page);
+  HrdBottomNav(this.page, {super.key});
   int page;
 
   @override

@@ -92,7 +92,7 @@ class _SocietySearchState extends State<SocietySearch> {
     });
 
     final results = _controller.vacancies.where((vacancy) {
-      final position = vacancy.positionName?.toLowerCase() ?? "";
+      final position = vacancy.positionName.toLowerCase() ?? "";
       final company = vacancy.companyName?.toLowerCase() ?? "";
       final address = vacancy.companyAddress?.toLowerCase() ?? "";
       final datePosted = vacancy.submissionStartDate;

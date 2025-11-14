@@ -224,7 +224,7 @@ class _SignupRoleViewState extends State<SignupRoleView> {
                   ],
                 ),
                 const SizedBox(height: 40),
-                Container(
+                SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
                     onPressed: _isLoading ? null : _handleRegister,

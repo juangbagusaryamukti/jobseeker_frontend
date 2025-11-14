@@ -88,9 +88,9 @@ class _HrdVacancyState extends State<HrdVacancy> {
               onPressed: () {
                 Navigator.popAndPushNamed(context, "/hrd_create_vacancy");
               },
-              child: Icon(Icons.add),
               backgroundColor: ColorsApp.primarydark,
               foregroundColor: ColorsApp.white,
+              child: Icon(Icons.add),
             )
           : null,
       backgroundColor: ColorsApp.white,
@@ -101,7 +101,7 @@ class _HrdVacancyState extends State<HrdVacancy> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Container(
+                SizedBox(
                   width: double.infinity,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
